@@ -8,6 +8,13 @@ import VueApexCharts from 'vue-apexcharts'
 Vue.use(VueApexCharts);
 Vue.config.productionTip = false
 Vue.component("apexchart", VueApexCharts);
+import axios from 'axios'
+
+Vue.config.productionTip = false
+
+Vue.prototype.$RestApi="http://signosvit.convence.org.mx/";
+Vue.prototype.$axios= axios;
+
 new Vue({
   router,
   render: h => h(App)
