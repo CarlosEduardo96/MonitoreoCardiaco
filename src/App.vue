@@ -6,9 +6,7 @@
             <b-col cols="3">
                 <b-list-group>
                     <b-list-group-item to="/">Monitoreo</b-list-group-item>
-                    <b-list-group-item to="/historial">Historial</b-list-group-item>
-                    <b-list-group-item to="/Tablas">Datos</b-list-group-item>
-                    <b-list-group-item to="/Graficas">Graficas</b-list-group-item>                    
+                    <b-list-group-item to="/historial">Historial</b-list-group-item>                
                 </b-list-group>            
             </b-col>
             <b-col>

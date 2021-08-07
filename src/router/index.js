@@ -2,8 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Monitoreo'
 import Historial from '../views/Historial'
-import Graficas from '../views/Tablas'
-import Tablas from '../views/Graficas'
+
 
 Vue.use(VueRouter)
 
@@ -17,16 +16,6 @@ const routes = [
     path:'/historial',
     name: 'Historial',
     component: Historial
-  },
-  {
-    path:'/tablas',
-    name: 'Tablas',
-    component: Tablas
-  },
-  {
-    path:'/graficas',
-    name: 'Graficas',
-    component: Graficas
   }
   // {
   //   path: '/',
