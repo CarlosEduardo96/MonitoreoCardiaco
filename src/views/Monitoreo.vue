@@ -2,6 +2,17 @@
    <b-container fluid>
         <h1>Monitoreo</h1>
         <div>
+            <b-row>
+    <div class="container">
+    <b-form-select v-model="selected" class="mb-3"> Selecione
+      <b-form-select-option :value="null">Please select an option</b-form-select-option>
+      <b-form-select-option value="a">Option A</b-form-select-option>
+      
+    </b-form-select>
+
+  </div>
+</b-row>    
+
             <b-card-group deck>
             <b-card bg-variant="primary" text-variant="white" header="Persona" class="text-center">
                 <b-card-text>
