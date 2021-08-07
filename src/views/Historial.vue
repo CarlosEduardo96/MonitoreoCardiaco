@@ -11,18 +11,21 @@ export default {
     name: "Historial",
     data(){
         return{
-            fields: ['first_name', 'last_name', 'age'],
-            items:[
-                { age: 40, first_name: 'Dickerson', last_name: 'Macdonald' },
-                {  age: 21, first_name: 'Larsen', last_name: 'Shaw' },
-                {  age: 89, first_name: 'Geneva', last_name: 'Wilson' },
-                { age: 38, first_name: 'Jami', last_name: 'Carney' }
-            ]
+            fields: ['id_dato', 'id_usuario', 'temp','pulso','pso','fecha','estatus'],
+            items:[]
         }
+    },
+    mounted(){
+        this.GetDatos();
     },
     methods:{
         GetDatos(){
-            
+            this.$axios.get(this.$RestApi+"datos.php")
+            .then((res)=>{
+                this.items=res.data.datos;
+                console.log(res);
+            })
+            .catch(err=>console.log(err));
         }
     }
 }

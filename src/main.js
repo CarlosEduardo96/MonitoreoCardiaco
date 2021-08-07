@@ -9,7 +9,7 @@ import axios from 'axios'
 Vue.config.productionTip = false
 
 Vue.prototype.$RestApi="http://signosvit.convence.org.mx/";
-Vue.prototipe.$axios=axios;
+Vue.prototype.$axios= axios;
 
 new Vue({
   router,
